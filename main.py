@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app, origin='*')
 
 @app.route("/", methods=["GET"])
-def create_link():
+def hello():
     return {
         "msg": "ok",
         "status": "success",
